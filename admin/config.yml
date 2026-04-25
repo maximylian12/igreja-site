@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: maximylian12/igreja-site
   branch: main
 
 media_folder: "uploads"
