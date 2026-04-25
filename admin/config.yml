@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+locale: "pt"
+
+collections:
+  - name: "galeria"
+    label: "Galeria"
+    folder: "content/galeria"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Foto", name: "image", widget: "image" }
+      - { label: "Descrição", name: "description", widget: "text", required: false }
+
+  - name: "paginas"
+    label: "Textos do Site"
+    files:
+      - label: "Informações da Igreja"
+        name: "informacoes"
+        file: "content/informacoes.md"
+        fields:
+          - { label: "Nome da Igreja", name: "nome", widget: "string" }
+          - { label: "Endereço", name: "endereco", widget: "string" }
+          - { label: "Versículo", name: "versiculo", widget: "text" }
+          - { label: "Sobre Nós", name: "sobre", widget: "text" }
+          - { label: "Louvor YouTube", name: "louvor_youtube", widget: "string", required: false }
