@@ -1,20 +1,10 @@
-# Site da Igreja com Painel Admin
+PAINEL SIMPLES
 
-Este pacote tem:
-- index.html
-- admin/index.html
-- admin/config.yml
-- content/informacoes.md
-- uploads/
+Arquivos principais:
+- index.html = site público, sem botão Admin
+- editar.html = painel simples
 
-Para o painel funcionar de verdade:
-1. Suba esta pasta para um repositório no GitHub.
-2. Conecte o repositório ao Netlify.
-3. No Netlify, ative Identity.
-4. Em Identity > Services, ative Git Gateway.
-5. Convide seu e-mail em Identity.
-6. Acesse: https://SEUSITE.netlify.app/admin/
+Como acessar:
+https://SEUSITE.netlify.app/editar.html
 
-Observação:
-O botão de louvor foi ajustado para tocar com um clique em “Abrir louvor”/“Louvor”.
-Alguns navegadores podem bloquear autoplay se o usuário não tiver clicado em nada antes, mas como o play acontece após o clique, normalmente funciona.
+Esse painel não usa Netlify Identity. Ele abre links do GitHub para editar o site.
